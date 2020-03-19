@@ -1,4 +1,4 @@
-package aula14;
+package aula14e15;
 
 public abstract class Pessoa {
 
@@ -7,10 +7,9 @@ public abstract class Pessoa {
     protected String sexo;
     protected int experiencia;
 
-    public Pessoa(String nome, String sexo, int experiencia) {
+    public Pessoa(String nome, int idade, String sexo) {
         this.nome = nome;
         this.sexo = sexo;
-        this.experiencia = experiencia;
     }
 
     protected void ganharExp() {

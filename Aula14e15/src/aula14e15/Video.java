@@ -1,4 +1,4 @@
-package aula14;
+package aula14e15;
 
 public class Video implements AcoesVideos {
 
@@ -10,7 +10,7 @@ public class Video implements AcoesVideos {
 
     public Video(String titulo) {
         this.titulo = titulo;
-        this.avaliacao = 1;
+        this.avaliacao = 0;
         this.views = 0;
         this.curtidas = 0;
         this.reproduzindo = false;
@@ -69,6 +69,11 @@ public class Video implements AcoesVideos {
     @Override
     public void like() {
         this.curtidas++;
+    }
+
+    @Override
+    public String toString() {
+        return "Video{" + "titulo=" + titulo + ", avaliacao=" + avaliacao + ", views=" + views + ", curtidas=" + curtidas + ", reproduzindo=" + reproduzindo + '}';
     }
 
 }

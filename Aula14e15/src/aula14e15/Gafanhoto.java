@@ -1,12 +1,12 @@
-package aula14;
+package aula14e15;
 
 public class Gafanhoto extends Pessoa {
 
     private String login;
     private int totAssistido;
 
-    public Gafanhoto(String nome, String sexo, int experiencia, String login) {
-        super(nome, sexo, experiencia); //Usando os parametros da classe mãe
+    public Gafanhoto(String nome, int idade, String sexo, String login) {
+        super(nome, idade, sexo); //Usando os parâmetros da classe mãe
         this.login = login;
         this.totAssistido = 0;
     }
@@ -33,6 +33,7 @@ public class Gafanhoto extends Pessoa {
 
     @Override
     public String toString() {
+        //super.toString esta buscando os textos do método toString() da classe mãe
         return "Gafanhoto{" + super.toString() + "\nlogin=" + login + ", totAssistido=" + totAssistido + '}';
     }
 
